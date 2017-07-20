@@ -107,6 +107,9 @@ you can change the value of node `<cron_expr>` using any standard [cron expressi
 Send an email to info@tooso.ai to request your APIKEY
 
 ### Set your API KEY: 
+
+Access the extension configuration under System -> Configuration -> Tooso Search Engine
+
 1. Under __API Configuration__
 * Insert your API key into __API key__ field
 * Insert __http://v{apiVersionWithNoDot}.api.tooso.ai__ into __API base url__ field. The current supported version is 1, so the placeholder {apiVersionWithNoDot} should be replaced by 1.
