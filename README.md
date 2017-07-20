@@ -109,7 +109,7 @@ Send an email to info@tooso.ai to request your APIKEY
 ### Set your API KEY: 
 
 Access the extension configuration under System -> Configuration -> Tooso Search Engine
-![Access the extension](./docs/adminpanel.png)
+![Access the extension](./docs/admin_panel.png)
 
 1. Under __API Configuration__
 * Insert your API key into __API key__ field
