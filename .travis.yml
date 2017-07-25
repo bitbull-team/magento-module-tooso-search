@@ -1,15 +1,6 @@
 sudo: required
 dist: trusty
 group: edge
-addons:
-  apt:
-    packages:
-    - mysql-server-5.6
-    - mysql-client-core-5.6
-    - mysql-client-5.6
-    - apache2
-    - libapache2-mod-fastcgi
-    - npm
 language: php
 php:
   - '5.3'
@@ -19,6 +10,8 @@ php:
   - '7.0'
   - '7.1'
 env:
+  global:
+    - COMPOSER_MODULE_NAME=bitbull/magento-tooso-search
   matrix:
     - MAGENTO_CE_VERSION=1.9.3.1
     - MAGENTO_CE_VERSION=1.9.2.4
@@ -28,6 +21,6 @@ cache:
     - $HOME/.composer/cache
     - $HOME/node_modules
 before_install: ./dev/travis/before_install.sh
-install: true #composer install --no-interaction --no-dev --prefer-dist
+install: ./dev/travis/install.sh
 before_script: true #./dev/travis/before_script.sh
-script: true #./dev/travis/launch_tests.sh
+script: sleep 30 #./dev/travis/launch_tests.sh
