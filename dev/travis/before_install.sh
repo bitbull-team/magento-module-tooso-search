@@ -5,7 +5,7 @@ trap '>&2 echo Error: Command \`$BASH_COMMAND\` on line $LINENO failed with exit
 
 # Create document root
 sudo mkdir -p /var/www/html
-sudo chown -R www-data:www-data /var/www/html
+sudo chown -R travis:www-data /var/www/html
 
 # disable xdebug and adjust memory limit
 phpenv config-rm xdebug.ini
